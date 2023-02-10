@@ -10,7 +10,7 @@ lsmodel0 <- lm(formula = height ~ 1, data = darwin)
 
 summary(lsmodel0)
 # investigation of the linear models via the code (summary())
-#after the summery we are going to find out statistical measurmeents such as mean and se this code 
+#after the summery we are going to find out statistical measurements such as mean and see this code 
 
 mean(darwin$height)
 #use this code to compare the means
@@ -101,9 +101,6 @@ darwin %>%
   geom_segment(aes(x=1, xend=2, y=20.192, yend=20.192-2.617), linetype="dashed")+
   stat_summary(fun.y=mean, geom="crossbar", width=0.2)
 
-
-
-
-
-
+sethis::use_git_config(user.name = "DecarieDavies", user.email = "decarie.davies@uea.ac.uk")
+gitcreds::gitcreds_set()
 
