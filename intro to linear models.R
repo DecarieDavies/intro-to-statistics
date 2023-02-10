@@ -101,6 +101,3 @@ darwin %>%
   geom_segment(aes(x=1, xend=2, y=20.192, yend=20.192-2.617), linetype="dashed")+
   stat_summary(fun.y=mean, geom="crossbar", width=0.2)
 
-sethis::use_git_config(user.name = "DecarieDavies", user.email = "decarie.davies@uea.ac.uk")
-gitcreds::gitcreds_set()
-
