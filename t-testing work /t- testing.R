@@ -1,5 +1,6 @@
 # t test helps us identify normal distribution alongside other graphs that help us to estimate the mean difference of confidence intervals
 # the base r and te tidyverse ran will create different structured graphs trhe difference is ..... (write when im home what the difernece is)
+#mutiple students t test 
 
 ##base r code---- 
 x <- seq(-4, 4, length=100)
@@ -54,4 +55,7 @@ tibble(df,critical_t) %>%
   geom_hline(aes(yintercept=1.96), linetype="dashed", colour="red")+
   labs(x= "Degrees of Freedom",
        y= expression(paste("Critical value of ", italic("t"))))
-base r
+
+#base r summery code and function have been put together in order to analyse the results into a data frame work
+#READ ME FILE GOES IN HERE - put work in th environment and allos me to allow this t run 
+lsmodel1 <- lm(height ~ type, data = darwin)
